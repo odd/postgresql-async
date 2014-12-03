@@ -74,6 +74,7 @@ object Configuration {
         :+ "-feature"
     ,
     scalacOptions in doc := Seq("-doc-external-doc:scala=http://www.scala-lang.org/archives/downloads/distrib/files/nightly/docs/library/"),
+    scalaVersion := projectScalaVersion,
     crossScalaVersions := Seq(projectScalaVersion, "2.10.4"),
     javacOptions := Seq("-source", "1.6", "-target", "1.6", "-encoding", "UTF8"),
     organization := "com.github.mauricio",
